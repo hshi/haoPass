@@ -347,28 +347,28 @@ class ViewFrame(ttk.Frame):
 		oneLabel = ttk.Label(self.viewFrame, text="Account:")
 		oneLabel.grid(row = 1, column = 0, padx=(15,0), pady=(15,5), ipadx=5, ipady=5, sticky='NSE')
 
-		self.account_entry = PEntry(self.viewFrame, "Input key words")
+		self.account_entry = PEntry(self.viewFrame, "Input key words", use_font=True)
 		self.account_entry.grid(row = 1, column = 1, columnspan=3, padx=(0,5), pady=(15,5), ipadx=5, ipady=5, sticky='NESW')
 
 		#Username Entry
 		oneLabel = ttk.Label(self.viewFrame, text="Username:")
 		oneLabel.grid(row = 1, column = 4, padx=(5,0), pady=(15,5), ipadx=5, ipady=5, sticky='NSE')
 
-		self.username_entry = PEntry(self.viewFrame, "Input key words")
+		self.username_entry = PEntry(self.viewFrame, "Input key words", use_font=True)
 		self.username_entry.grid(row = 1, column = 5, columnspan=3, padx=(0,15), pady=(15,5), ipadx=5, ipady=5, sticky='NESW')
 
 		#Others Entry
 		oneLabel = ttk.Label(self.viewFrame, text="Others:")
 		oneLabel.grid(row = 2, column = 0, padx=(15,0), pady=(5,15), ipadx=5, ipady=5, sticky='NSE')
 
-		self.others_entry = PEntry(self.viewFrame, "Input key words")
+		self.others_entry = PEntry(self.viewFrame, "Input key words", use_font=True)
 		self.others_entry.grid(row = 2, column = 1, columnspan=3, padx=(0,5), pady=(5,15), ipadx=5, ipady=5, sticky='NESW')
 
 		#Password Entry
 		oneLabel = ttk.Label(self.viewFrame, text="Password:")
 		oneLabel.grid(row = 2, column = 4, padx=(5,0), pady=(5,15), ipadx=5, ipady=5, sticky='NSE')
 
-		self.password_entry = PEntry(self.viewFrame, "Input key words")
+		self.password_entry = PEntry(self.viewFrame, "Input key words", use_font=True)
 		self.password_entry.grid(row = 2, column = 5, columnspan=3, padx=(0,15), pady=(5,15), ipadx=5, ipady=5, sticky='NESW')
 
 		#Place horizontal line

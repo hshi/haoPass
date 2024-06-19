@@ -274,7 +274,7 @@ class InputFrame(ttk.Frame):
 		self.account_label.set("Account")
 		self.account_label.grid(row = 2, column = 0, padx=(15,5), pady=(15,5), ipadx=5, ipady=5, sticky='NESW')
 
-		self.account_entry = PEntry(self.viewFrame, "Required: it can be Website or App.")
+		self.account_entry = PEntry(self.viewFrame, "Required: it can be Website or App.", use_font=True)
 		self.account_entry.grid(row = 2, column = 1, columnspan=4, padx=(5,15), pady=(15,5), ipadx=5, ipady=5, sticky='NESW')
 
 		#Username Entry
@@ -282,7 +282,7 @@ class InputFrame(ttk.Frame):
 		self.username_label.set("Username")
 		self.username_label.grid(row = 3, column = 0, padx=(15,5), pady=5, ipadx=5, ipady=5, sticky='NESW')
 
-		self.username_entry = PEntry(self.viewFrame, "Required: your account name or ID.")
+		self.username_entry = PEntry(self.viewFrame, "Required: your account name or ID.", use_font=True)
 		self.username_entry.grid(row = 3, column = 1, columnspan=4, padx=(5,15), pady=5, ipadx=5, ipady=5, sticky='NESW')
 
 		#Password Entry
@@ -290,7 +290,7 @@ class InputFrame(ttk.Frame):
 		self.password_label.set("Password")
 		self.password_label.grid(row = 4, column = 0, padx=(15,5), pady=5, ipadx=5, ipady=5, sticky='NESW')
 
-		self.password_entry = PEntry(self.viewFrame, "Required: your password.")
+		self.password_entry = PEntry(self.viewFrame, "Required: your password.", use_font=True)
 		self.password_entry.grid(row = 4, column = 1, columnspan=4, padx=(5,15), pady=5, ipadx=5, ipady=5, sticky='NESW')
 
 		#Other Entry
@@ -299,7 +299,7 @@ class InputFrame(ttk.Frame):
 			self.otherCombo_label.append( ttk.Combobox(self.viewFrame, values=self.otherCombo_value, justify="right") )
 			self.otherCombo_label[-1].grid(row = 5+i, column = 0, padx=(15,5), pady=5, ipadx=5, ipady=5, sticky='NESW')
 		
-			self.otherCombo_entry.append( PEntry(self.viewFrame, 'Optional: set any other information.') )
+			self.otherCombo_entry.append( PEntry(self.viewFrame, 'Optional: set any other information.', use_font=True) )
 			self.otherCombo_entry[-1].grid(row = 5+i, column = 1, columnspan = 4, padx=(5,15), pady=5, ipadx=5, ipady=5, sticky='NESW')
 
 	#----------------
@@ -324,7 +324,7 @@ class InputFrame(ttk.Frame):
 		self.otherCombo_label.append( ttk.Combobox(self.viewFrame, values=self.otherCombo_value, justify="right") )
 		self.otherCombo_label[-1].grid(row = 5+i, column = 0, padx=(15,5), pady=5, ipadx=5, ipady=5, sticky='NESW')
 		
-		self.otherCombo_entry.append( PEntry(self.viewFrame, 'Optional: set any other information for your account.') )
+		self.otherCombo_entry.append( PEntry(self.viewFrame, 'Optional: set any other information.', use_font=True) )
 		self.otherCombo_entry[-1].grid(row = 5+i, column = 1, columnspan = 4, padx=(5,15), pady=5, ipadx=5, ipady=5, sticky='NESW')
 
 		self.__updateFrameCanvas()

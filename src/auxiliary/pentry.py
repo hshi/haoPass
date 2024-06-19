@@ -10,7 +10,7 @@ class PEntry(ttk.Entry):
 	#----
 	#Init
 	#----
-	def __init__(self, container, placeholder="", *args, **kwargs):
+	def __init__(self, container, placeholder="", use_font=False, *args, **kwargs):
 
 		super().__init__(container, *args, **kwargs)
 
@@ -18,7 +18,7 @@ class PEntry(ttk.Entry):
 		self.set_styles()
 
 		#Set font
-		self.set_font()
+		if use_font: self.set_font()
 
 		#Init variables
 		self.placeholder = placeholder
