@@ -11,6 +11,16 @@ I wrote this software to manage passwords, with all information encrypted. Users
 - **Search Functionality**: Quickly find stored information by searching for keywords.
 - **Modify Entries**: Update existing account details.
 - **Delete Entries**: Remove accounts when they are no longer needed.
+
+## Font
+
+To differentiate between the number 1, lowercase letter 'l', uppercase letter 'I', and to distinguish between the uppercase letter 'O' and the number 0, users can download one of the following Google fonts:
+
+- **Roboto Mono**: https://fonts.google.com/specimen/Roboto+Mono?preview.text=Auth0
+- **Inconsolata**: https://fonts.google.com/specimen/Roboto+Mono?preview.text=Auth0
+
+Once installed, the app can automatically utilize the font.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
