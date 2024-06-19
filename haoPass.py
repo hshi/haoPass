@@ -55,6 +55,7 @@ class App(tk.Tk):
 	#----------
 	def __set_styles(self):
 
+		#Use theme
 		style = ttk.Style()
 		style.theme_use("vista")		
 
@@ -94,6 +95,10 @@ class App(tk.Tk):
 	#Inital App info
 	#---------------
 	def __set_App_info(self):
+
+		#Set icon
+		self.icon_image = tk.PhotoImage(file='images/padlock.png')
+		self.iconphoto(True, self.icon_image)
 
 		#Set title
 		self.title('HaoPass: None')
