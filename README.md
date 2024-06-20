@@ -14,10 +14,9 @@ I wrote this software to manage passwords, with all information encrypted. Users
 
 ## Font
 
-To differentiate between the number 1, lowercase letter 'l', uppercase letter 'I', and to distinguish between the uppercase letter 'O' and the number 0, users can download one of the following Google fonts:
+To differentiate between the number 1, lowercase letter 'l', uppercase letter 'I', and to distinguish between the uppercase letter 'O' and the number 0, we use the following Google fonts:
 
 - **Roboto Mono**: https://fonts.google.com/specimen/Roboto+Mono?preview.text=Auth0
-- **Inconsolata**: http://www.google.com/fonts/specimen/Inconsolata
 
 Once installed, the app can automatically utilize the font.
 
