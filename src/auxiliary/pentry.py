@@ -44,14 +44,17 @@ class PEntry(ttk.Entry):
 	#--------
 	def set_font(self):
 
-		if "Roboto Mono" in tkfont.families():
-			self.configure( font=("Roboto Mono",9) )
-		elif "Inconsolata" in tkfont.families():
-			self.configure( font=("Inconsolata", 10) )
-		elif "Consolas" in tkfont.families():
-			self.configure( font=("Consolas",10) )
-		else:
-			pass
+		self.configure( font=("Roboto Mono",9) )
+
+		#If we allow user to install font on their PC, use following
+		# if "Roboto Mono" in tkfont.families():
+		# 	self.configure( font=("Roboto Mono",9) )
+		# elif "Inconsolata" in tkfont.families():
+		# 	self.configure( font=("Inconsolata", 10) )
+		# elif "Consolas" in tkfont.families():
+		# 	self.configure( font=("Consolas",10) )
+		# else:
+		# 	pass
 
 	#---------------
 	#Put placeholder
@@ -113,10 +116,10 @@ if __name__ == "__main__":
 
 	root = tk.Tk()
 
-	entry_with_placeholder_1 = PEntry(root, placeholder="Enter")
+	entry_with_placeholder_1 = PEntry(root, placeholder="Enter", use_font=True)
 	entry_with_placeholder_1.pack(pady=10, padx=10)
 
-	entry_with_placeholder_2= PEntry(root, placeholder="Enter A")
+	entry_with_placeholder_2= PEntry(root, placeholder="Enter A", use_font=True)
 	entry_with_placeholder_2.pack(pady=10, padx=10)
 
 	def read_1():

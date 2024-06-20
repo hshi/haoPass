@@ -223,14 +223,17 @@ class ViewFrame(ttk.Frame):
 		style.configure("ViewFrame.NavigateFrame.TFrame", background='lightgray')
 
 		#For Treeview, Padding=(left, top, right, botton)
-		if "Roboto Mono" in tkfont.families():
-			style.configure( "ViewFrame.Treeview", padding=(5,0,0,5), font=("Roboto Mono",9) )
-		elif "Inconsolata" in tkfont.families():
-			style.configure( "ViewFrame.Treeview", padding=(5,0,0,5), font=("Inconsolata", 10) )
-		elif "Consolas" in tkfont.families():
-			style.configure( "ViewFrame.Treeview", padding=(5,0,0,5), font=("Consolas",10) )
-		else:
-			style.configure( "ViewFrame.Treeview", padding=(5,0,0,5) )
+		style.configure( "ViewFrame.Treeview", padding=(5,0,0,5), font=("Roboto Mono",9) )
+
+		#If we allow user to install font on their PC, use following
+		# if "Roboto Mono" in tkfont.families():
+		# 	style.configure( "ViewFrame.Treeview", padding=(5,0,0,5), font=("Roboto Mono",9) )
+		# elif "Inconsolata" in tkfont.families():
+		# 	style.configure( "ViewFrame.Treeview", padding=(5,0,0,5), font=("Inconsolata", 10) )
+		# elif "Consolas" in tkfont.families():
+		# 	style.configure( "ViewFrame.Treeview", padding=(5,0,0,5), font=("Consolas",10) )
+		# else:
+		# 	style.configure( "ViewFrame.Treeview", padding=(5,0,0,5) )
 
 
 	#-----------------------------------------------------------------

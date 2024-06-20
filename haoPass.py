@@ -1,5 +1,7 @@
 import os
 import datetime
+import pyglet
+pyglet.options['win32_gdi_font'] = True
 import tkinter as tk
 from tkinter import ttk, filedialog
 from tkinter.messagebox import askokcancel, WARNING
@@ -59,6 +61,9 @@ class App(tk.Tk):
 		style = ttk.Style()
 		style.theme_use("vista")		
 
+		#Load fonts
+		pyglet.font.add_file("fonts\\RobotoMono-Regular.ttf")
+		
 	#---------------
 	#Check app files
 	#---------------
