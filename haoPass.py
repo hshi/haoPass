@@ -102,7 +102,7 @@ class App(tk.Tk):
 	def __set_App_info(self):
 
 		#Set icon
-		self.icon_image = tk.PhotoImage(file='images/padlock.png')
+		self.icon_image = tk.PhotoImage(file='images\\padlock.png')
 		self.iconphoto(True, self.icon_image)
 
 		#Set title
