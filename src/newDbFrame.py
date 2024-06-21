@@ -144,8 +144,12 @@ class NewDbFrame(ttk.Frame):
 		#Chcek database file
 		db_file = normpath( db_dir+"\\"+db_name+".db" )
 		if os.path.exists(db_file):
-			showwarning(title='Warning', message="The database exists in selected directory.")
-			return
+
+			answer = askokcancel(title="Confirmation", 
+													 message="The database exists in selected directory. Do you want to replace it?", 
+													 icon=WARNING)
+
+			if not answer: return
 
 		#Check password
 		new_pass_1 = self.new_pass_1_entry.get()
