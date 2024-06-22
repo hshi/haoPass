@@ -69,7 +69,7 @@ class App(tk.Tk):
 	#---------------
 	def __check_app_files(self):
 
-		dirname = os.getcwd() + "\\database"
+		dirname = os.getcwd() + "\\data"
 		if not os.path.exists(dirname): os.makedirs(dirname)
 
 	#----------------
@@ -350,7 +350,7 @@ class App(tk.Tk):
 
 		#Open the file dialog to select a file
 		db_file = filedialog.askopenfilename(
-												 initialdir=normpath( os.getcwd()+"\\database" ),
+												 initialdir=normpath( os.getcwd()+"\\data" ),
 		                     title="Select a File",
 		                     filetypes=(("database", "*.db"), ("All files", "*.*"))
 		                     )

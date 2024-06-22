@@ -50,7 +50,7 @@ class NewDbFrame(ttk.Frame):
 		self.container = container
 
 		#Get default_dir
-		self.default_dir      = normpath( os.getcwd()+"\\database" )
+		self.default_dir      = normpath( os.getcwd()+"\\data" )
 
 		#Value for entry
 		self.db_dir_var       = tk.StringVar( value = self.default_dir ) 

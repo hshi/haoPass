@@ -52,7 +52,7 @@ class LoginFrame(ttk.Frame):
 		if not os.path.exists(self.db_file): self.db_file = ""
 
 		#Get default_dir
-		self.default_dir  = normpath( os.getcwd()+"\\database" )
+		self.default_dir  = normpath( os.getcwd()+"\\data" )
 
 		#Value for entry
 		self.db_file_var    = tk.StringVar() #only store value in entry
